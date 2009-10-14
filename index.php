@@ -12,7 +12,8 @@
         while ($board = readdir($boarddir_handle)) {
             if($board == "." || $board == "..") { continue; }
             $topicCount = count(glob("$boarddir/$board/*"))-1;
-            echo "<tr><td width=\"100px\"><a href=\"viewboard.php?group=$group&board=$board\">$board</a></td><td>$topicCount</td></tr>";
+            include("$boarddir/$board/settings/id");
+            echo "<tr><td width=\"100px\"><a href=\"viewboard.php?id=$id\">$board</a></td><td>$topicCount</td></tr>";
         }
         echo "</tbody></table>";
     }

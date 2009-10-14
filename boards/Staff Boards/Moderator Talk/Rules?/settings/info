@@ -1,0 +1,9 @@
+<?php
+
+$boardid = 1;
+$groupname = "Staff Boards";
+$boardname = "Moderator Talk";
+$topicname = "Rules?";
+$topicdir = getcwd() . "/boards/$groupname/$boardname/$topicname";
+
+?>
