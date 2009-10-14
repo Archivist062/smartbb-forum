@@ -1,4 +1,5 @@
-Well, we should AT LEAST ban spambots.
-Abe Lincoln
-1255369915
-
+<?php
+$message = "Well, we should AT LEAST ban spambots.";
+$author = "Abe Lincoln";
+$date = 1255369915;
+?>

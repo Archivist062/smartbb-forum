@@ -1,3 +1,5 @@
-What should our rules be?
-Joe Shmoe
-1255368271
+<?php
+$message = "What should our rules be?";
+$author = "Joe Shmoe";
+$date = 1255368271;
+?>

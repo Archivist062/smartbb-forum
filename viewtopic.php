@@ -11,11 +11,13 @@
     echo "<table class=\"post\" style=\"width:750px; max-width:750px;\"><tbody>";
     while ($a != $postCount) {
         if($a == 0) {
-            $post = file("$directory/topic");
+            //$post = file("$directory/topic");
+            include("$directory/topic");
         } else {
-            $post = file("$directory/reply$a");
+            //$post = file("$directory/reply$a");
+            include("$directory/reply$a");
         }
-        echo "<tr><td class=\"postAuthor\">".$post['1']."</td><td class=\"postDate\" align=\"right\" nowrap>".date('h:i:s M d Y',$post['2'])."</td></tr><tr><td class=\"postMessage\" colspan=\"2\">".$post['0']."</td></tr>";
+        echo "<tr><td class=\"postAuthor\">".$author."</td><td class=\"postDate\" align=\"right\" nowrap>".date('h:i:s M d Y',$date)."</td></tr><tr><td class=\"postMessage\" colspan=\"2\">".$message."</td></tr>";
         $a++;
     }
     echo "</tbody></table>";

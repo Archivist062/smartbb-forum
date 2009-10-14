@@ -1,3 +1,5 @@
-Here is what will happen:\n\nWe will first have to ban spambots. Then, we will ban links to outside sources. If that isn't enough, then we will ban all outside sources altogether. Got it? If not, then you will be stripped of your powers!
-Mr. Lowly Admin
-1255370593
+<?php
+$message = "Here is what will happen:\n\nWe will first have to ban spambots. Then, we will ban links to outside sources. If that isn't enough, then we will ban all outside sources altogether. Got it? If not, then you will be stripped of your powers!";
+$author = "Mr. Lowly Admin";
+$date = 1255370593;
+?>
