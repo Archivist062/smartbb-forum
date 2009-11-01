@@ -1,7 +1,9 @@
 <?php $pageTitle = "Test Forum"; include("../theme/header.php");
 
+    include("loginForm.php");
     $directory = getcwd() . "/boards";
     $directory_handle = @opendir($directory) or die("Error opening $directory");
+    loginForm();
     echo "<h3>Test Forum</h3><br>";
     while ($group = readdir($directory_handle)) {
         if($group == "." || $group == "..") { continue; }
